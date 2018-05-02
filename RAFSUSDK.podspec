@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
+  # Could not find remote branch 0.0.1 to clone.#  Supports git, hg, bzr, svn and HTTP.
   #
 
   s.source       = { :git => "https://github.com/popking5466/RAFSUSDK.git", :tag => "#{s.version}" }
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "RAFSUSDK/RayonicsFSUSDK.framework/Headers/*.{h}"
+  s.source_files  = "RayonicsFSUSDK.framework/Headers/*.{h}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.vendored_frameworks = 'RAFSUSDK/RayonicsFSUSDK.framework'
+  s.vendored_frameworks = 'RayonicsFSUSDK.framework'
   # s.framework  = ""
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
