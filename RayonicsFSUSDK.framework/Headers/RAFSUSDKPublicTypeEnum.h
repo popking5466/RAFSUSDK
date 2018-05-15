@@ -106,6 +106,13 @@ typedef NS_ENUM(NSUInteger, NSRAFSUSDKLockStatusType){
     NSRAFSUSDKLockStatusTypeUnlocked = 0x01,
 };
 
+typedef NS_ENUM(NSUInteger, NSRAFSUSDKArmingType){
+    
+    NSRAFSUSDKArmingTypeNotSet = NSNotFound,//未设置
+    NSRAFSUSDKArmingTypeOff = 0x00,//撤防
+    NSRAFSUSDKArmingTypeOn = 0x01,//布防
+};
+
 typedef NS_ENUM(NSUInteger, NSRAFSUSDKTesterType){
     
     NSRAFSUSDKTesterTypePrivate = 0x01,//SDK Test private (自己调试用)

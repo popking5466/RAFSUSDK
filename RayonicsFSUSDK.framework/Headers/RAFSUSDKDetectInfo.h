@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "RAFSUSDKPublicTypeEnum.h"
-#import "RAFSUSDKLockInfo.h"
+@class RAFSUSDKLockInfo;
 
 @interface RAFSUSDKDetectInfo : NSObject
 
@@ -21,5 +21,6 @@
 @property (nonatomic, assign) BOOL fsuFlooded;
 @property (nonatomic, assign) NSInteger horizontalSensing;
 @property (nonatomic, assign) NSInteger historyEventCount;
+@property (nonatomic, assign) NSRAFSUSDKArmingType armingType;
 
 @end

@@ -44,6 +44,10 @@
 - (void)simpleFsuRequestSetFSUWarningIntervalInfo:(RAFSUSDKResultInfo *)info;
 - (void)simpleFsuRequestReadFSUWarningIntervalInfo:(RAFSUSDKResultInfo *)info;
 - (void)simpleFsuRequestReadFSUUnvarnishedTransmissionInfo:(RAFSUSDKResultInfo *)info;
+- (void)simpleFsuRequestInitFSU:(RAFSUSDKResultInfo *)info;
+- (void)simpleFsuRequestRestartFSU:(RAFSUSDKResultInfo *)info;
+- (void)simpleFsuRequestActiveReadFSUDetectInfo:(RAFSUSDKResultInfo *)info;
+- (void)simpleFsuRequestSetFSUName:(RAFSUSDKResultInfo *)info;
 
 /*内测使用*/
 - (void)simpleFsuRequestStr:(NSString *)debugStr;
@@ -91,6 +95,11 @@
 + (void)getFSUPPPAddressInfo;
 
 + (void)sendFSUUnvarnishedTransmissionInfo:(NSString *)infoString;
+
++ (void)initFSU;
++ (void)restartFSU;
++ (void)readFSUDetectInfo;
++ (void)setFSUName:(NSString *)nameString;
 
 /*内测使用(release版本无效)*/
 + (void)reportStr:(NSString *)str;

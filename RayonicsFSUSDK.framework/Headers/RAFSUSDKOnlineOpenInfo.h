@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "RAFSUSDKPublicTypeEnum.h"
 
+static NSInteger kDefaultAutomaticLockInterval = 8;
+
 @interface RAFSUSDKOnlineOpenInfo : NSObject
 
 
@@ -16,7 +18,9 @@
 @property (nonatomic, strong) NSDate *endTime;
 @property (nonatomic, assign) NSInteger lockID;
 @property (nonatomic, assign) NSInteger userID;
+@property (nonatomic, assign) NSInteger automaticLockInterval;
 
-- (instancetype)initWithUserID:(NSInteger)userID lockID:(NSInteger)lockID beginTime:(NSDate *)beginTime endTime:(NSDate *)endTime;
+- (instancetype)initWithUserID:(NSInteger)userID lockID:(NSInteger)lockID beginTime:(NSDate *)beginTime endTime:(NSDate *)endTime automaticLockInterval:(NSInteger)automaticLockInterval;
+
 
 @end
